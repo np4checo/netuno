@@ -4,8 +4,6 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #1A7FBD;
-    display: flex;
-    flex-direction: column;
 }
 .container {
     display: flex;
@@ -81,7 +79,7 @@ nav {
     background-position: -240px;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 1080px;
+    height: 1000px;
     display: flex;
     justify-content: space-around;
 }
@@ -300,8 +298,12 @@ input:focus::placeholder {
     /* O projeto */
 
 .the-project {
-    width: 1000px;
-    height: 1000px;
-    background-color: black;
+    background-image: url('../assets/images/dev.png');
+    background-repeat: no-repeat;
+    background-position-y: -20px;
+    background-position-x: 130px;
+    background-size: 500px;
+    width: 100vw;
+    height: 150vh;
 
 }
