@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,86 @@
     <title>Netuno</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
+    <!-- Cabeçalho com os links -->
     <header>
         <nav>
-            <div class="header-img"><img src="./assets/images/logo.png" alt=""></div> <div class="header-nav">O Projeto</div>
+            <div class="header-img"><img src="./assets/images/logo.png" alt=""></div>
+            <div class="header-nav">O Projeto</div>
             <div class="header-nav">O Problema</div>
             <div class="header-nav">Sua Jornada</div>
             <div class="header-nav">Objetivos</div>
             <div class="header-button1">
-            <div class="header-button">Processo Seletivo</div>
+                <div class="header-button">Processo Seletivo</div>
             </div>
         </nav>
-        
+
         <div class="header-line"></div>
     </header>
-    <section class="img-main">
-        <div class="back-form0"></div>
-        <div class="back-form">
-            <div class="front-form">
-                <h3>Formulário de Cadastro</h3>
-                <h4>Preencha seus dados</h4>
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Nome Completo">
-                    <input type="email" name="" id="" placeholder="E-mail">
-                    <input type="text" name="" id="" placeholder="Estado">
+    <div class="container">
+        <!-- Primeira imagem e o formulário -->
+        <section class="img-main">
+            <div class="back-form0"></div>
+            <div class="back-form">
+                <div class="front-form">
+                    <h3>Formulário de Cadastro</h2>
+                    <h4>Preencha seus dados</h3>
+                    <form action="">
+                        <input type="text" class="input-name" placeholder="Nome Completo">
+                        <input type="email" class="input-email" placeholder="E-mail">
+                        <input type="text" class="input-state" placeholder="Estado">
+    
+                </div>
+                <div class="front-form1">
+                    <div class="form1-inside">
+                        <h4>Conhecimento em programação</h4>
+                        <div class="form-checkbox">
+                        <input type="checkbox" id="first-checkbox">HTML
+                        <input type="checkbox" id="first-checkbox">CSS
+                        <input type="checkbox" id="first-checkbox">JavaScript
+                        <input type="checkbox" id="first-checkbox">PHP
+                        </div>
+                        <div class="form-checkbox">
+                        <input type="checkbox" id="first-checkbox">.NET
+                        <input type="checkbox" id="first-checkbox">Vue.JS
+                        <input type="checkbox" id="first-checkbox">ReactJS
+                        <input type="checkbox" id="first-checkbox">React Native
+                        </div>
+                        <div class="form-checkbox">
+                        <input type="checkbox" id="first-checkbox">Node
+                        <input type="checkbox" id="first-checkbox">Phyton
+                        <input type="checkbox" id="first-checkbox">Flutter
+                        <input type="checkbox" id="first-checkbox">Outras
+                        </div>
+                    </div>
+                </div>
+                <div class="front-form2">
+                    <div class="last-div">
+                        <h4>Já trabalhou com desenvolvimento?</h4>
+                        <div class="last-div-checkbox">
+                        <label ><input type="checkbox" name="any-curses">Não</label>
+                        <label><input type="checkbox" name="any-curses">Sim</label>
+                        </div>
+                        <div class="last-div-line"></div>
+                        <div class="last-div-p"><p>(*) Campos Obrigatórios</p></div>
+                        <a href=""><div class="last-div-button">Enviar</div></a>
+                        <div class="last-div-warning">
+                            <div class="last-div-warning-p">
+                                <p>Ao clicar em enviar, você concorda
+                                    com todos os termos de uso descritos em <a href="">política de privacidade.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </form>
             </div>
-            <div class="front-form1">
-            </div>
-            <div class="front-form2">
-            </div>
-        </div>
-    </section>
-    
+        </section>
+        <!-- Segunda div "O Projeto" -->
+        <div class="the-project"></div>
+    </div>
+
 </body>
+
 </html>
