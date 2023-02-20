@@ -75,19 +75,19 @@ nav {
 }
 
 .img-main {
-    background-image: url('../assets/images/bannertopo.png');
-    background-position: -240px;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 1000px;
+    background: url('../assets/images/bannertopo.png') no-repeat;
+    background-position-x: -190px;
+    background-position-y: 10px;
+    height: 980px;
+    background-size: cover;
     display: flex;
     justify-content: space-around;
 }
 .back-form0 {
-    width: 770px;
+    width: 400px;
 }
 .back-form {
-    margin-top: 110px;
+    margin-top: 90px;
     height: 730px;
     width: 405px;
     display: flex;
@@ -300,10 +300,30 @@ input:focus::placeholder {
 .the-project {
     background-image: url('../assets/images/dev.png');
     background-repeat: no-repeat;
-    background-position-y: -20px;
-    background-position-x: 130px;
+    background-position-y:-20px;
+    background-position-x: 100px;
     background-size: 500px;
     width: 100vw;
     height: 150vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+.the-project-one {
+    width: 400px;
+}
+
+.the-project-two {
+    padding-top: 40px;
+    width: 400px;
+    text-align: justify;
+}
+.the-project-two h1 {
+    font-size: 40px;
+    color: #A4DCFF;
+}
+.the-project-two h4 {
+    color: #FFF;
+    line-height: 20px;
 }
