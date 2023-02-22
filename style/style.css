@@ -304,7 +304,7 @@ input:focus::placeholder {
     background-position-x: 100px;
     background-size: 500px;
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -326,4 +326,56 @@ input:focus::placeholder {
 .the-project-two h4 {
     color: #FFF;
     line-height: 20px;
+}
+
+/* Terceira div */
+
+.section-face {
+    background-color: #F9F9F9;
+    width: 102%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+}
+.face-n-text {
+    display: flex;
+    justify-content: space-evenly;
+}
+.section-face .face-one {
+    width: 45vw;
+    height: 110vh;
+    background: url('../assets/images/Container2.png');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position-x: 40px;
+}
+.section-face-text {
+    width: 400px;
+}
+.section-face-text .title-n-subtitle h1 {
+    font-size: 35px;
+}
+.section-face-text .title-n-subtitle {
+    text-align: justify;
+    border-bottom: 1px solid #D4D4D4;
+    padding: 120px 60px 0 0;
+    margin-right: 10px;
+}
+.section-face .subtitle-text {
+    width: 380px;
+}
+.section-face-divs {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -310px;
+    left: 20px;
+}
+.section-face-divs .face-div1 {
+    margin: 5px;
+    padding: 5px;
+    width: 320px;
+    height: 230px;
+    background-color: white;
+    border-radius: 17px;
 }
