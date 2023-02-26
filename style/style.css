@@ -93,14 +93,14 @@ nav {
     background: url('../assets/images/bannertopo.png') no-repeat;
     background-position-x: -190px;
     background-position-y: -30px;
-    height: 980px;
-    background-size: cover;
+    height: 1500px;
+    background-size: auto;
     display: flex;
     justify-content: space-around;
 }
 
 .back-form0 {
-    width: 400px;
+    width: 800px;
 }
 
 .back-form {
@@ -120,7 +120,7 @@ nav {
     border-image-slice: 1;
 }
 
-/* formulário frontal */
+/* formulÃ¡rio frontal */
 
 .front-form {
     width: 100%;
