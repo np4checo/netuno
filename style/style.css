@@ -1,10 +1,24 @@
-* {box-sizing: border-box;}
+@font-face {
+    font-family: 'notosans';
+    src: url('../font/NotoSans-Light.ttf') format(truetype);
+}
+@font-face {
+    font-family: 'noto-bold';
+    src: url('../font/NotoSans-Medium.ttf') format(truetype);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'notosans';
+
+}
 
 body {
     margin: 0px;
     padding: 0px;
     background-color: #1A7FBD;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -18,6 +32,7 @@ header {
     color: white;
     flex-direction: column;
 }
+
 .header-line {
     width: 96%;
     height: 1px;
@@ -83,9 +98,11 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+
 .back-form0 {
     width: 400px;
 }
+
 .back-form {
     margin-top: 90px;
     height: 730px;
@@ -96,7 +113,7 @@ nav {
     align-items: center;
     padding: 5px;
 
-    /* border */ 
+    /* border */
 
     border: 1px solid;
     border-image: linear-gradient(45deg, #ffffff65, #0077cc79, #ffffff52);
@@ -115,24 +132,29 @@ nav {
     flex-direction: column;
     border-radius: 15px 15px 0 0;
 }
+
 .front-form form {
     display: flex;
     flex-direction: column;
-    
+
 }
+
 .front-form h3 {
     margin: 0px;
     margin-left: 40px;
     color: #CECECE;
 }
+
 .front-form h4 {
     margin: 0px;
     margin-left: 40px;
     color: #1A7FBD;
 }
+
 form {
     margin-left: 20px;
 }
+
 form input {
     border: 1px solid #CECECE;
     border-radius: 5px;
@@ -140,6 +162,7 @@ form input {
     width: 340px;
     height: 37px;
 }
+
 form .input-name {
     background-image: url(../assets/icones/user.png);
     background-repeat: no-repeat;
@@ -147,6 +170,7 @@ form .input-name {
     background-position-x: 5px;
     background-position-y: 10px;
 }
+
 form .input-email {
     background-image: url(../assets/icones/mail.png);
     background-repeat: no-repeat;
@@ -154,6 +178,7 @@ form .input-email {
     background-position-x: 5px;
     background-position-y: 15px;
 }
+
 form .input-state {
     background-image: url(../assets/icones/state.png);
     background-repeat: no-repeat;
@@ -161,19 +186,24 @@ form .input-state {
     background-position-x: 5px;
     background-position-y: 10px;
 }
+
 input:not(:placeholder-shown) {
     background-image: none;
 }
+
 input::placeholder {
     color: #CECECE;
     padding: 25px;
 }
+
 form input:focus {
     background-image: none;
 }
+
 input:focus::placeholder {
     color: transparent;
 }
+
 .front-form1 {
     width: 100%;
     flex: 1;
@@ -187,6 +217,7 @@ input:focus::placeholder {
     color: white;
     margin-left: 15px;
 }
+
 .front-form1 .form1-inside {
     width: 90%;
     height: 100%;
@@ -195,9 +226,11 @@ input:focus::placeholder {
     flex-direction: column;
     justify-content: start;
 }
-.front-form1 .form-checkbox{
+
+.front-form1 .form-checkbox {
     margin-bottom: 5px;
 }
+
 .form-checkbox input {
     margin: 6px;
     margin-bottom: 15px;
@@ -214,7 +247,7 @@ input:focus::placeholder {
 }
 
 
-/* terceira div */ 
+/* terceira div */
 
 .last-div {
     width: 90%;
@@ -223,6 +256,7 @@ input:focus::placeholder {
     align-items: start;
     padding: 10px;
 }
+
 .last-div h4 {
     color: #1A7FBD;
     margin-left: 20px;
@@ -257,6 +291,7 @@ input:focus::placeholder {
     color: #1A7FBD;
     margin-bottom: 20px;
 }
+
 .last-div a {
     text-decoration: none;
     width: 100%;
@@ -287,15 +322,16 @@ input:focus::placeholder {
     text-align: center;
 }
 
-.last-div-warning .last-div-warning-p{
-    width: 70%; 
+.last-div-warning .last-div-warning-p {
+    width: 70%;
 }
+
 .last-div-warning .last-div-warning-p a {
     color: #1A7FBD;
     text-decoration: none;
 }
 
-    /* O projeto */
+/* O projeto */
 
 .the-project {
     background-image: url('../assets/images/dev.png');
@@ -319,10 +355,13 @@ input:focus::placeholder {
     width: 400px;
     text-align: justify;
 }
+
 .the-project-two h1 {
+    font-size: 40px;
     font-size: 40px;
     color: #A4DCFF;
 }
+
 .the-project-two h4 {
     color: #FFF;
     line-height: 20px;
@@ -333,14 +372,16 @@ input:focus::placeholder {
 .section-face {
     background-color: #F9F9F9;
     width: 102%;
-    height: 140vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
 }
+
 .face-n-text {
     display: flex;
     justify-content: space-evenly;
 }
+
 .section-face .face-one {
     width: 45vw;
     height: 110vh;
@@ -349,29 +390,38 @@ input:focus::placeholder {
     background-size: 500px;
     background-position-x: 40px;
 }
+
 .section-face-text {
     width: 400px;
 }
+
 .section-face-text .title-n-subtitle h1 {
     font-size: 40px;
-    color: #1A7FBD;
+    font-family: 'noto-bold';
+    background-image: linear-gradient(to right, #1A7FBD, #A4DCFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .section-face-text .title-n-subtitle {
     text-align: justify;
     border-bottom: 1px solid #D4D4D4;
     padding: 120px 60px 0 0;
     margin-right: 10px;
 }
+
 .section-face .subtitle-text {
     width: 380px;
 }
+
 .section-face-divs {
     display: flex;
     justify-content: center;
     position: relative;
-    top: -145px;
+    top: -70px;
     left: 20px;
 }
+
 .section-face-divs .face-div1 {
     margin: 5px;
     padding: 5px;
@@ -388,6 +438,7 @@ input:focus::placeholder {
     border: 1px solid #d4d4d45d;
     box-shadow: 10px 10px 14px #22222241;
 }
+
 .face-div1 .face-div-text {
     align-items: center;
     display: flex;
@@ -397,7 +448,9 @@ input:focus::placeholder {
     text-align: center;
     padding: 20px;
 }
-
+.face-div-text h2 {
+    font-family: 'noto-bold';
+}
 .sua-jornada {
     background-color: #F9F9F9;
     display: flex;
@@ -406,6 +459,7 @@ input:focus::placeholder {
     align-items: center;
     padding-bottom: 70px;
 }
+
 .sua-jornada-logo {
     display: flex;
     justify-content: center;
@@ -413,24 +467,32 @@ input:focus::placeholder {
     padding: 5px;
     margin-bottom: 10px;
 }
+
 .sua-jornada-logo h1 {
-    font-size: 40px;
-    color: #1A7FBD;
+    font-size: 35px;
+    background-image: linear-gradient(to right, #1A7FBD, #A4DCFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'noto-bold';
 }
+
 .sua-jornada-logo img {
     margin: 2px;
     margin-left: 3px;
     margin-right: 3px;
 }
+
 .logo-vetor1 img {
     transform: rotate(180deg);
 }
+
 .sua-jornada-sights {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .sua-jornada-sights .sights {
     display: flex;
     justify-content: space-around;
@@ -439,13 +501,40 @@ input:focus::placeholder {
     margin-top: 5px;
     margin-bottom: 15px;
 }
+
 .sights .sights-son {
-    width: 31%;
+    width: 32%;
     height: 90%;
-    background-color: #1A7FBD;
+    background-color: #1a7fbd;
+    color: white;
+    font-size: 13px;
     border-radius: 15px;
     box-shadow: 10px 10px 14px #22222241;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
 }
+
+.sights-son .sights-img {
+    background-color: white;
+    height: 54px;
+    width: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+}
+
+.sights-img img {
+    width: 30px;
+}
+
+.sights .sights-text {
+    width: 70%;
+    margin-left: 15px;
+}
+
 .sua-jornada .sua-jornada-register {
     display: flex;
     justify-content: center;
@@ -459,19 +548,22 @@ input:focus::placeholder {
     border-radius: 15px;
     box-shadow: 10px 10px 14px #22222241;
 }
+
 .sua-jornada-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.sua-jornada-vetor { 
+
+.sua-jornada-vetor {
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .objetivos {
     display: flex;
     flex-direction: column;
@@ -479,16 +571,19 @@ input:focus::placeholder {
     padding-top: 20px;
     padding-bottom: 90px;
 }
+
 .objetivos .objetivos-title {
     font-size: 30px;
     color: white;
 }
+
 .objetivos .objetivos-sights {
     display: flex;
     justify-content: space-around;
     width: 900px;
     height: 190px;
 }
+
 .objetivos .objetivos-sights .objetivos-sights-child {
     width: 31%;
     height: 100%;
@@ -497,7 +592,129 @@ input:focus::placeholder {
     border-radius: 12px;
     box-shadow: 10px 10px 14px #22222241;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
 .footer-content {
     height: 300px;
-    background-color: black;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+    align-items: center;
+}
+
+footer div {
+    margin: 0px;
+}
+
+footer .footer-child-1 {
+    height: 60%;
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+footer .footer-child-2 {
+    height: 60%;
+    flex: 2;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+
+footer .footer-child-3 {
+    height: 60%;
+    flex: 2;
+    display: flex;
+    color: white;
+}
+
+footer .footer-child-4 {
+    height: 60%;
+    flex: 2;
+    display: flex;
+    color: white;
+}
+
+.footer-child-1 .child-grandchild {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.footer-child-1 .child-1-grandchild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-child-1 img {
+    position: relative;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+.footer-child-1 .child-socialmedia img {
+    width: 17px;
+}
+
+.footer-child-1 .child-laws {
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+.footer-child-2 .footer-child2-button {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+footer .footer-button {
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.footer-child-3 .child3-grandchild {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.child3-grandchild div {
+    width: 190px;
+    border-right: 1px solid white;
+    height: 25px;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+.footer-child-4 .child4-grandchild {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.child4-grandchild div {
+    width: 190px;
+    height: 25px;
+    padding-top: 5px;
+    padding-left: 30px;
 }
