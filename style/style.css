@@ -11,7 +11,6 @@
 * {
     box-sizing: border-box;
     font-family: 'notosans';
-
 }
 
 body {
@@ -63,6 +62,19 @@ header .header-nav-father {
     align-items: center;
     width: 100%;
     height: auto;
+}
+
+.open-menu {
+    display: none;
+    width: 50px;
+    height: 40px;
+}
+
+.open-menu .open-menu-bar {
+    height: 4px;
+    width: 50px;
+    background-color: white;
+
 }
 
 .header-img img {
@@ -124,11 +136,27 @@ header .header-nav-father {
     align-items: center;
     padding: 5px;
 
-    /* border */
+    /* border do form */
 
-    border: 1px solid;
-    border-image: linear-gradient(45deg, #ffffff65, #0077cc79, #ffffff52);
-    border-image-slice: 1;
+    position: relative;
+
+}
+
+.back-form::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background: linear-gradient(45deg,
+            #ffffff79,
+            transparent,
+            transparent,
+            #ffffff79) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0), padding-box linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }
 
 /* formulário frontal */
@@ -142,6 +170,13 @@ header .header-nav-father {
     justify-content: space-evenly;
     flex-direction: column;
     border-radius: 15px 15px 0 0;
+    z-index: 1;
+}
+.front-form1 {
+    z-index: 1;
+}
+.front-form2 {
+    z-index: 1;
 }
 
 .front-form form {
@@ -514,6 +549,14 @@ input:focus::placeholder {
     margin-bottom: 15px;
 }
 
+.sua-jornada a {
+    text-decoration: none;
+}
+
+.sua-jornada-register span {
+    color: #1A7FBD;
+}
+
 .sights .sights-son {
     width: 32%;
     height: 90%;
@@ -747,6 +790,10 @@ footer .footer-button {
 }
 
 @media (min-width: 1400px) {
+    * {
+        transition: all 0.2 ease;
+    }
+
     .img-main {
         height: 150vh;
         background-size: 180vh;
@@ -814,6 +861,10 @@ footer .footer-button {
 }
 
 @media (min-width: 1600px) {
+    * {
+        transition: all 0.2 ease;
+    }
+
     .the-project {
         background-position-y: 20px;
         background-position-x: 100px;
@@ -823,14 +874,18 @@ footer .footer-button {
 }
 
 @media (min-height: 930px) {
+
+
     .the-project {
         height: 100vh;
     }
 }
 
 @media (max-width: 1100px) {
+
+
     .the-project-two {
-        background-color: rgba(255, 255, 255, 0.342);
+        background-color: rgba(2, 2, 2, 0.295);
         height: 35em;
         border-radius: 10px;
         text-align: center;
@@ -848,7 +903,7 @@ footer .footer-button {
 
     .section-face .face-one {
         width: 58vw;
-        height: 75vh;
+        height: 50vh;
         background-size: 20em;
         background-position-x: 40px;
     }
@@ -934,6 +989,46 @@ footer .footer-button {
     .sua-jornada-logo img {
         width: 10em;
     }
+
+    .quero-me-cadastrar {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-@media (max-width: 900px) {}
+@media (max-width: 900px) {
+
+
+    header .header-nav-father {
+        display: none;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        font-size: 12px;
+    }
+
+    .open-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 450px) {
+    .the-project-two {
+        height: 55em;
+        font-size: 16px;
+    }
+
+    .section-face-text {
+        width: 300px;
+    }
+
+    .section-face .subtitle-text {
+        width: 222px;
+    }
+
+}
