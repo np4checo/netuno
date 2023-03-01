@@ -27,7 +27,7 @@ loadPage();
 
 // Selecionar apenas um checkbox no form
 
-var opcao1 = documentI.getElementByd("opcao1");
+var opcao1 = document.getElementById("opcao1");
 var opcao2 = document.getElementById("opcao2");
 
 opcao1.addEventListener("change", function () {
